@@ -31,6 +31,7 @@ document.querySelector('body').addEventListener('click', function() {
 accordeon.forEach(elements => {
     elements.classList.remove('active');
     elements.addEventListener('click', function() {
+        document.querySelector('.btn_back').classList.add('back');
         if(!elements.classList.contains('active')) {
             accordeon.forEach (elements => {
                 elements.classList.remove('active');
@@ -40,6 +41,12 @@ accordeon.forEach(elements => {
             elements.classList.toggle('active');
         }, 01);
     });
+});
+document.querySelector('.btn_back').addEventListener('click', function() {
+    this.classList.remove('back')
+    for(let i = 0; i < accordeon.length; i++) {
+        accordeon[i].classList.remove('active');
+    }
 });
 
 document.querySelector('.header__center .btn').addEventListener('click', function() {
@@ -62,3 +69,24 @@ for(let i = 0; i < footerH5.length; i++) {
         this.classList.toggle('active');
     });
 };
+
+document.querySelector('.modal .btn').addEventListener('click', function (event) {
+    this.event.preventDefault();
+});
+
+document.querySelector("#nav-bottom-menu").addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.navbar__bottom__menu').classList.toggle('active');
+
+    document.querySelector("#nav-bottom-catalog").classList.remove('active');
+    document.querySelector('.catalog_menu').classList.remove('active');
+    document.querySelector('.btn_back').classList.remove('back');
+});
+document.querySelector("#nav-bottom-catalog").addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.catalog_menu').classList.toggle('active');
+
+    document.querySelector("#nav-bottom-menu").classList.remove('active');
+    document.querySelector('.navbar__bottom__menu').classList.remove('active');
+    document.querySelector('.btn_back').classList.remove('back');
+});
