@@ -53,6 +53,10 @@ document.querySelector('.header__center .btn').addEventListener('click', functio
     document.querySelector('.modal').classList.add('active');
     document.querySelector('body').classList.add('hidden');
 });
+document.querySelector('.navbar__bottom__menu .btn').addEventListener('click', function() {
+    document.querySelector('.modal').classList.add('active');
+    document.querySelector('body').classList.add('hidden');
+});
 
 const modalClose = document.querySelectorAll('.modal__close');
 for(let i = 0; i < modalClose.length; i++) {
@@ -69,10 +73,6 @@ for(let i = 0; i < footerH5.length; i++) {
         this.classList.toggle('active');
     });
 };
-
-document.querySelector('.modal .btn').addEventListener('click', function (event) {
-    this.event.preventDefault();
-});
 
 document.querySelector("#nav-bottom-menu").addEventListener('click', function() {
     this.classList.toggle('active');

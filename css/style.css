@@ -3575,8 +3575,31 @@ ul, ol {
     height: 100vh;
     background: rgba(0, 0, 0, 0.4);
     padding-bottom: 56px; }
+    .navbar__bottom__menu .btn {
+      width: 170px;
+      height: 50px;
+      border: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      background: #FFFFFF;
+      border: 2px solid #FF6C3F;
+      border-radius: 4px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 145%;
+      color: #FF6C3F; }
     .navbar__bottom__menu ul {
-      height: 346px;
+      height: 380px;
       width: 100%;
       background: #FFFFFF;
       border-radius: 8px 8px 0px 0px;
