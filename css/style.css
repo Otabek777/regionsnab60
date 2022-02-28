@@ -4160,4 +4160,21 @@ ul, ol {
   .services__item .next {
     left: 16px; }
   .contacts_page {
-    padding-top: 20px; } }
+    padding-top: 20px; }
+  .contacts_page__left {
+    padding-right: 0; }
+  .contacts_page {
+    padding-bottom: 464px; }
+    .contacts_page .map {
+      width: 100%;
+      position: absolute !important;
+      bottom: 62px;
+      left: 0; }
+  .contacts_page__left .block1, .contacts_page__left .block2 {
+    bottom: 264px; } }
+
+@media screen and (max-width: 340px) {
+  .characteristics_product .box p {
+    width: 130px; }
+  .characteristics_product .box::after {
+    content: "..........................................."; } }

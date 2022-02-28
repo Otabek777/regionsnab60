@@ -89,7 +89,14 @@ document.querySelector("#nav-bottom-catalog").addEventListener('click', function
     document.querySelector("#nav-bottom-menu").classList.remove('active');
     document.querySelector('.navbar__bottom__menu').classList.remove('active');
     document.querySelector('.btn_back').classList.remove('back');
-}); 
+});
+const menuBottom = document.querySelector('.navbar__bottom__menu');
+window.onclick = function(event) {
+    if(event.target == menuBottom) {
+        menuBottom.classList.remove('active');
+        document.querySelector('#nav-bottom-menu').classList.remove('active');
+    }
+}
 
 document.querySelector('.modal .btn').addEventListener('click', function() {
     document.querySelector('.modal').classList.remove('active');
