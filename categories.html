@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
@@ -401,6 +402,123 @@
                 </div>
             </div>
         </header>
+    </div>
+    <div class="modal_filter">
+        <div class="modal_filter_block">
+            <button class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="16" fill="#F4F6FB"/>
+                    <path d="M20.7134 10.3432L10.3425 20.7141C10.0821 20.9745 10.0821 21.3966 10.3425 21.657C10.6028 21.9173 11.025 21.9173 11.2853 21.6569L21.6562 11.2861C21.9166 11.0257 21.9166 10.6036 21.6562 10.3432C21.3959 10.0829 20.9737 10.0829 20.7134 10.3432Z" fill="#BDBDC8"/>
+                    <path d="M21.6587 20.7139L11.2878 10.343C11.0275 10.0826 10.6054 10.0826 10.345 10.343C10.0847 10.6033 10.0847 11.0254 10.345 11.2858L20.7159 21.6567C20.9762 21.917 21.3984 21.917 21.6587 21.6567C21.9191 21.3963 21.9191 20.9742 21.6587 20.7139Z" fill="#BDBDC8"/>
+                </svg>
+            </button>
+            <h3>Форма расчета:</h3>
+            <h6>Произведем все необходимые расчеты за Вас</h6>
+            <p class="line">Контактные данные</p>
+            <div class="block">
+                <div class="input">
+                    <p>Имя</p>
+                    <input type="text" placeholder="Как к Вам обращаться">
+                </div>
+                <div class="input">
+                    <p>Телефон</p>
+                    <input type="text" placeholder="+7(___)___-__-__">
+                </div>
+                <div class="input">
+                    <p>E-mail</p>
+                    <input type="email" placeholder="Ваш электронный адрес">
+                </div>
+            </div>
+            <p class="line line_center">Параметры расчета</p>
+            <div class="block">
+                <div class="input">
+                    <p>Выберите раздел</p>
+                    <select name="" id="">
+                        <option value="">Раздел</option>
+                        <option value="">Раздел</option>
+                        <option value="">Раздел</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <p>Выберите подраздел</p>
+                    <select name="" id="">
+                        <option value="">Подраздел</option>
+                        <option value="">Подраздел</option>
+                        <option value="">Подраздел</option>
+                    </select>
+                </div>
+                <div class="price_wrap_box">
+                    <div class="price_wrap">
+                        <p>Площадь,м²</p>
+                        <div class="range__box">
+                            <div>
+                                <input type="text" id="amount-1" readonly >
+                            </div>
+                            <div>
+                                <input type="text" id="amount2-1" readonly >
+                            </div>
+                        </div>
+                        <div id="slider-range-1"></div>
+                    </div>
+                    <div class="price_wrap">
+                        <p>Ценовой диапазон,₽</p>
+                        <div class="range__box">
+                            <div>
+                                <input type="text" id="amount-2" readonly >
+                            </div>
+                            <div>
+                                <input type="text" id="amount2-2" readonly >
+                            </div>
+                        </div>
+                        <div id="slider-range-2"></div>
+                    </div>
+                </div>
+                <div class="colors">
+                    <p>Цвет</p>
+                    <div class="color_radio color1">
+                        <input type="radio" name="color_radio1">
+                        <span></span>
+                    </div>
+                    <div class="color_radio color2">
+                        <input type="radio" name="color_radio1">
+                        <span></span>
+                    </div>
+                    <div class="color_radio color3">
+                        <input type="radio" name="color_radio1">
+                        <span></span>
+                    </div>
+                    <div class="color_radio color4">
+                        <input type="radio" name="color_radio1">
+                        <span></span>
+                    </div>
+                    <div class="color_radio color5">
+                        <input type="radio" name="color_radio1">
+                        <span></span>
+                    </div>
+                    <div class="color_radio color6">
+                        <input type="radio" name="color_radio1">
+                        <span></span>
+                    </div>
+                    <div class="color_radio color7">
+                        <input type="radio" name="color_radio1">
+                        <span></span>
+                    </div>
+                    <div class="color_radio color8">
+                        <input type="radio" name="color_radio1">
+                        <span></span>
+                    </div>
+                    <div class="color_radio color9">
+                        <input type="radio" name="color_radio1">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="121">
+                    <label for="121">Я согласен на <a href="#">обработку персональных данных</a></label>
+                </div>
+                <button class="btn">Отправить</button>
+            </div>
+        </div>
     </div>
     <div class="modal">
         <div class="modal__block">
@@ -812,7 +930,34 @@
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-
+        $( function() {
+          $( "#slider-range-1" ).slider({
+            range: true,
+            min: 100,
+            max: 3000,
+            values: [ 100, 3000 ],
+            slide: function( event, ui ) {
+              $( "#amount-1" ).val( ui.values[ 0 ] + "" );
+              $( "#amount2-1" ).val( ui.values[ 1 ] + "" );
+            }
+          });
+          $( "#amount-1" ).val( $( "#slider-range-1" ).slider( "values", 0 ) + "" );
+          $( "#amount2-1" ).val(  $( "#slider-range-1" ).slider( "values", 1 ) + "" );
+        });
+        $( function() {
+          $( "#slider-range-2" ).slider({
+            range: true,
+            min: 1000,
+            max: 30000,
+            values: [ 1000, 30000 ],
+            slide: function( event, ui ) {
+              $( "#amount-2" ).val( ui.values[ 0 ] + "" );
+              $( "#amount2-2" ).val( ui.values[ 1 ] + "" );
+            }
+          });
+          $( "#amount-2" ).val( $( "#slider-range-2" ).slider( "values", 0 ) + "" );
+          $( "#amount2-2" ).val(  $( "#slider-range-2" ).slider( "values", 1 ) + "" );
+        });
     </script>
 </body>
 </html>

@@ -92,6 +92,212 @@ ul, ol {
     background: #3ABDD5 url(../img/check.svg) no-repeat center;
     background-size: 65%; }
 
+.modal_filter {
+  padding-bottom: 40px;
+  display: none;
+  background: rgba(30, 31, 58, 0.3);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding-top: 144px;
+  overflow-y: auto; }
+  .modal_filter .color_radio {
+    margin-right: 18px;
+    margin-bottom: 25px;
+    position: relative; }
+    .modal_filter .color_radio input {
+      width: 24px;
+      height: 24px;
+      border: 1px solid #BDBDC8;
+      opacity: 0;
+      position: relative;
+      z-index: 1;
+      cursor: pointer; }
+    .modal_filter .color_radio span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      border: 1px solid #BDBDC8;
+      border-radius: 50%;
+      cursor: pointer; }
+    .modal_filter .color_radio input:checked + span {
+      border: 2px solid rgba(242, 86, 39, 0.3); }
+    .modal_filter .color_radio input:checked + span::after {
+      content: "";
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: -1px;
+      right: -5px;
+      background: url(../img/radio.svg) no-repeat center/cover; }
+  .modal_filter .color_radio:last-child {
+    margin-right: 0; }
+  .modal_filter .color1 span {
+    background-color: #fff; }
+  .modal_filter .color2 span {
+    background: #1E1F3A; }
+  .modal_filter .color3 span {
+    background: #BDBDC8; }
+  .modal_filter .color4 span {
+    background: #5CB031; }
+  .modal_filter .color5 span {
+    background: #3ABDD5; }
+  .modal_filter .color6 span {
+    background: #FF6C3F; }
+  .modal_filter .color7 span {
+    background: #EE3939; }
+  .modal_filter .color8 span {
+    background: #171EB9; }
+  .modal_filter .color9 span {
+    background: #FFC805; }
+  .modal_filter .range__box {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .modal_filter .range__box div {
+    width: 70px; }
+  .modal_filter .range__box div input {
+    width: 70px;
+    height: 32px;
+    padding: 0 12px; }
+  .modal_filter .price_wrap_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+  .modal_filter .price_wrap {
+    width: 148px; }
+    .modal_filter .price_wrap .range__box {
+      margin-top: 0; }
+    .modal_filter .price_wrap p {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 145%;
+      color: #1E1F3A;
+      margin-bottom: 8px; }
+  .modal_filter .check {
+    margin-bottom: 24px; }
+    .modal_filter .check input:checked + label::after {
+      background: #5CB031 url(../img/check.svg) no-repeat center; }
+  .modal_filter .btn {
+    width: 100%;
+    height: 50px;
+    background: #FF6C3F;
+    border-radius: 4px;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+    color: #FFFFFF;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .modal_filter .btn:hover {
+    background: #F25627; }
+  .modal_filter .colors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .modal_filter .colors p {
+      width: 100%;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 145%;
+      color: #1E1F3A;
+      margin-bottom: 8px; }
+
+.modal_filter.active {
+  display: block; }
+
+.modal_filter_block {
+  max-width: 620px;
+  width: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 12px rgba(148, 163, 189, 0.15), 0px 0px 1px rgba(255, 255, 255, 0.31);
+  box-shadow: 0px 8px 12px rgba(148, 163, 189, 0.15), 0px 0px 1px rgba(255, 255, 255, 0.31);
+  border-radius: 8px;
+  position: relative;
+  margin: 0 auto;
+  padding: 60px 0px; }
+  .modal_filter_block h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    color: #1E1F3A;
+    margin-bottom: 8px;
+    text-align: center; }
+  .modal_filter_block h6 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+    color: #444350;
+    margin-bottom: 40px;
+    text-align: center; }
+  .modal_filter_block .line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    background: #F4F6FB;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #BDBDC8; }
+  .modal_filter_block .line_center {
+    margin-top: 40px; }
+  .modal_filter_block .input {
+    margin-bottom: 24px; }
+    .modal_filter_block .input select {
+      width: 100%;
+      height: 40px;
+      background: #FFFFFF;
+      border: 1px solid #ECEEF3;
+      border-radius: 4px;
+      padding: 0 16px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 160%;
+      color: #1E1F3A; }
+    .modal_filter_block .input p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 145%;
+      color: #1E1F3A;
+      margin-bottom: 8px; }
+    .modal_filter_block .input input {
+      width: 100%;
+      height: 40px;
+      background: #FFFFFF;
+      border: 1px solid #ECEEF3;
+      border-radius: 4px;
+      padding: 0 16px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 145%;
+      color: #444350; }
+  .modal_filter_block .block {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto; }
+
 .modal, .modal_done {
   padding-bottom: 40px;
   display: none;
@@ -2067,13 +2273,13 @@ ul, ol {
   .catalog_page__item:hover .cart svg path {
     fill: #fff; }
 
-.price_wrap #slider-range {
+.price_wrap #slider-range, .price_wrap #slider-range-1, .price_wrap #slider-range-2 {
   height: 4px;
   background: #BDBDC8;
   border: none;
   border-radius: 6px; }
 
-.price_wrap .ui-slider-range.ui-corner-all.ui-widget-header {
+.price_wrap .ui-slider-range.ui-corner-all.ui-widget-header, .price_wrap .ui-slider-range-1.ui-corner-all.ui-widget-header, .price_wrap .ui-slider-range-2.ui-corner-all.ui-widget-header {
   background: #3ABDD5; }
 
 .price_wrap .ui-slider-handle.ui-corner-all.ui-state-default {
@@ -4194,7 +4400,61 @@ ul, ol {
       bottom: 62px;
       left: 0; }
   .contacts_page__left .block1, .contacts_page__left .block2 {
-    bottom: 264px; } }
+    bottom: 264px; }
+  .modal_filter {
+    padding-top: 46px;
+    padding-bottom: 96px; }
+  .modal_filter_block {
+    max-width: 290px;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .modal_filter_block .block {
+    padding: 0 25px; }
+  .modal_filter_block h3 {
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 8px; }
+  .modal_filter_block h6 {
+    max-width: 226px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 145%; }
+  .modal_filter_block .line {
+    margin-bottom: 16px; }
+  .modal_filter_block .input {
+    margin-bottom: 16px; }
+  .modal_filter_block .input p {
+    font-size: 14px;
+    line-height: 145%;
+    margin-bottom: 4px; }
+  .modal_filter_block .input input {
+    font-size: 14px;
+    line-height: 145%; }
+  .modal_filter_block .line_center {
+    margin-top: 32px;
+    margin-bottom: 79px; }
+  .modal_filter .price_wrap_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .modal_filter .price_wrap:nth-child(1) {
+    margin-bottom: 30px; }
+  .modal_filter .price_wrap {
+    width: 100%; }
+  .modal_filter .range__box div input {
+    width: 116px; }
+  .modal_filter .range__box div {
+    width: 116px; }
+  .modal_filter .price_wrap p {
+    font-size: 14px;
+    line-height: 145%; }
+  .modal_filter .color_radio {
+    margin-right: 12px; }
+  .modal_filter .color_radio:nth-child(8) {
+    margin-right: 0; } }
 
 @media screen and (max-width: 340px) {
   .characteristics_product .box p {

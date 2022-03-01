@@ -63,6 +63,7 @@ for(let i = 0; i < modalClose.length; i++) {
     modalClose[i].addEventListener('click', function() {
         document.querySelector('.modal').classList.remove('active');
         document.querySelector('.modal_done').classList.remove('active');
+        document.querySelector('.modal_filter').classList.remove('active');
         document.querySelector('body').classList.remove('hidden');
     });
 };
