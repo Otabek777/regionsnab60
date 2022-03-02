@@ -49,12 +49,16 @@ document.querySelector('.btn_back').addEventListener('click', function() {
     }
 });
 
-document.querySelector('.header__center .btn').addEventListener('click', function() {
+document.querySelector('.header__call').addEventListener('click', function() {
     document.querySelector('.modal').classList.add('active');
     document.querySelector('body').classList.add('hidden');
 });
+document.querySelector('.header__center .btn').addEventListener('click', function() {
+    document.querySelector('.modal_filter').classList.add('active');
+    document.querySelector('body').classList.add('hidden');
+});
 document.querySelector('.navbar__bottom__menu .btn').addEventListener('click', function() {
-    document.querySelector('.modal').classList.add('active');
+    document.querySelector('.modal_filter').classList.add('active');
     document.querySelector('body').classList.add('hidden');
 });
 
