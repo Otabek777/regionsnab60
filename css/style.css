@@ -3191,10 +3191,11 @@ ul, ol {
   .header__logo {
     display: none; }
   .header__center .btn {
-    display: none; }
+    min-width: 170px; }
   .header__cart {
     display: none; }
   .header__catalog {
+    min-width: 119px;
     width: 119px; }
     .header__catalog svg {
       margin-right: 0; }
