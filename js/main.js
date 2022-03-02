@@ -107,3 +107,7 @@ document.querySelector('.modal .btn').addEventListener('click', function() {
     document.querySelector('.modal').classList.remove('active');
     document.querySelector('.modal_done').classList.add('active');
 });
+document.querySelector('.modal_filter .btn').addEventListener('click', function() {
+    document.querySelector('.modal_filter').classList.remove('active');
+    document.querySelector('.modal_done').classList.add('active');
+});
