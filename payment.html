@@ -618,6 +618,40 @@
             </div>
         </div>
     </div>
+    <div class="modal_question">
+        <div class="modal__block">
+            <button class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="16" fill="#F4F6FB"/>
+                    <path d="M20.7134 10.3432L10.3425 20.7141C10.0821 20.9745 10.0821 21.3966 10.3425 21.657C10.6028 21.9173 11.025 21.9173 11.2853 21.6569L21.6562 11.2861C21.9166 11.0257 21.9166 10.6036 21.6562 10.3432C21.3959 10.0829 20.9737 10.0829 20.7134 10.3432Z" fill="#BDBDC8"/>
+                    <path d="M21.6587 20.7139L11.2878 10.343C11.0275 10.0826 10.6054 10.0826 10.345 10.343C10.0847 10.6033 10.0847 11.0254 10.345 11.2858L20.7159 21.6567C20.9762 21.917 21.3984 21.917 21.6587 21.6567C21.9191 21.3963 21.9191 20.9742 21.6587 20.7139Z" fill="#BDBDC8"/>
+                </svg>
+            </button>
+            <h3>Форма заказа услуги:</h3>
+            <h5>Изготовление доборных элементов под ваши размеры</h5>
+            <div class="form">
+                <div class="block">
+                    <p>Имя</p>
+                    <input type="text" class="input" placeholder="Как к вам обращаться">
+                </div>
+                <div class="block">
+                    <p>Телефон</p>
+                    <input type="text" class="input" placeholder="+7(___)___-__-__">
+                </div>
+                <div class="block">
+                    <p>Вопрос</p>
+                    <textarea name="" placeholder="Ваш вопрос или комментарий"></textarea>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="12">
+                    <label for="12">Я согласен на <a href="#">обработку персональных данных</a></label>
+                </div>
+                <div style="margin-bottom: 24px;" class="g-recaptcha" data-sitekey="6KepjAsTFFFFFFMqccY0ZiGqc3TEd3YVxo8cHsGX"></div>
+                <div class="text-danger" id="recaptchaError"></div>
+                <button class="btn">Отправить</button>
+            </div>
+        </div>
+    </div>
     <div class="modal">
         <div class="modal__block">
             <button class="modal__close">
@@ -667,7 +701,7 @@
                 <a class="btn2" href="#">Выбрать другую услугу</a>
             </form>
         </div>
-    </div>  
+    </div>
     <div class="navbar__bottom__menu">
         <button class="header__select mobile">
             <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -843,75 +877,68 @@
         </button>
     </div>
     <main class="main">
-        <section class="roof">
-            <div class="crumbs">
-                <div class="container">
-                    <div class="crumbs__box">
-                        <a href="#">Главная</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="6" viewBox="0 0 4 6" fill="none">
-                            <path d="M0.322266 0.42678L0.675819 0.0732269L3.6026 3L0.675819 5.92678L0.322266 5.57323L2.89529 3L0.322266 0.42678Z" fill="#999FAA"/>
-                        </svg>
-                        <a href="#">Каталог</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="6" viewBox="0 0 4 6" fill="none">
-                            <path d="M0.322266 0.42678L0.675819 0.0732269L3.6026 3L0.675819 5.92678L0.322266 5.57323L2.89529 3L0.322266 0.42678Z" fill="#999FAA"/>
-                        </svg>
-                        <p>Кровля</p>
+        <section class="payment">
+
+            <div class="container">
+                <div class="payment__box">
+                    <div class="payment__content">
+                        <div class="section__title">
+                            <h2 class="h2">Оплата и доставка</h2><br><br>
+                        </div>
+                        <div class="block">
+                            <h3 class="h3">Оплата</h3>
+                            <p class="text">Не зависимо от материалов кровли и фасада, монтаж не обойдется без доборных элементов. В этом разделе представлены изделия из металла. Мы изготавливаем их из оцинкованного металла толщиной 0,45мм. с полимерным покрытием. В наличии всегда металл основных расцветок RAL. Металл покрыт защитной пленкой. Работаем по размерам заказчика. Максимальная длина изделий 3м.</p>
+                            <p class="text">Наше преимущество: Оперативность и индивидуальный подход! Для размещения заказа или получения более подробной информации свяжитесь с нами. Работаем по размерам заказчика. Максимальная длина изделий 3м.</p>
+                        </div>
+                        <div class="wrap">
+                            <h4 class="h4">Способы оплаты:</h4>
+                            <ul>
+                                <li>Наличными при получении товара / наличными в офисе компании</li>
+                                <li>Безналичный расчет (для юр.лиц)</li>
+                            </ul>
+                        </div>
+                        <div class="block">
+                            <h3 class="h3">Доставка</h3>
+                            <p class="text">
+                                Не зависимо от материалов кровли и фасада, монтаж не обойдется без доборных элементов. В этом разделе представлены изделия из металла. Мы изготавливаем их из оцинкованного металла толщиной 0,45мм. с полимерным покрытием. В наличии всегда металл основных расцветок RAL. Металл покрыт защитной пленкой. Работаем по размерам заказчика. Максимальная длина изделий 3м.
+                            </p>
+                            <p class="text">
+                                Наше преимущество: Оперативность и индивидуальный подход! Для размещения заказа или получения более подробной информации свяжитесь с нами. Работаем по размерам заказчика. Максимальная длина изделий 3м.
+                            </p>
+                        </div>
+                        <div class="wrap">
+                            <h4 class="h4">Правила доставки:</h4>
+                            <ul>
+                                <li>Приобретенный товар доставляется до подъезда, дачи, коттеджа при наличии подъездных путей для грузового автомобиля.</li>
+                                <li>Обязательно Ваше присутствие в момент доставки</li>
+                                <li>По желанию покупателя товар распаковывается</li>
+                                <li>Подписывается акт приема-передачи</li>
+                                <li>Время доставки c 9:00 до 21:00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="payment__aside">
+                        <div class="wrap">
+                            <h3 class="title">Услуги</h3>
+                            <a class="link" href="#">Изготовление доборных элементов под ваши размеры</a>
+                            <a class="link" href="#">Расчет нужного количества материалов</a>
+                            <a class="link" href="#">Консультации по всем видам предлагаемых материалов</a>
+                            <a class="link" href="#">Доставка до объекта</a>
+                            <a class="link" href="#">Помощь в подборе бригады <br>для выполнения работ</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="section__title">
-                    <h2 class="h2">Кровля</h2>
-                </div>
-                <div class="roof__box">
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r1.png" alt="">
+                <div class="description_page__bottom">
+                    <div class="block">
+                        <h2 class="h2">Остались вопросы?</h2>
+                        <p>Свяжитесь с нами через форму обратной связи. <br>Наш консультант свяжется с вами в ближайшее время.</p>
+                        <div class="box">
+                            <button class="btn">Задать вопрос</button>
+                            <a href="tel:8 (911) 690-06-60" class="phone">8 (911) 690-06-60</a>
                         </div>
-                        <p class="title">Металлочерепица</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r2.png" alt="">
-                        </div>
-                        <p class="title">Профилированные листы</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r3.png" alt="">
-                        </div>
-                        <p class="title">Доборные элементы для кровли</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r4.png" alt="">
-                        </div>
-                        <p class="title">Вентиляционные выходы</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r5.png" alt="">
-                        </div>
-                        <p class="title">Крепеж для кровли</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r2.png" alt="">
-                        </div>
-                        <p class="title">Профилированные листы</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r7.png" alt="">
-                        </div>
-                        <p class="title">Софит металлический</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r8.png" alt="">
-                        </div>
-                        <p class="title">Элементы безопасности кровли</p>
-                    </a>
+                        <img src="img/man.png" alt="" class="img1">
+                        <img src="img/bg.png" alt="" class="img2">
+                    </div>
                 </div>
             </div>
         </section>
@@ -1052,6 +1079,7 @@
     <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script>
         $( function() {
           $( "#slider-range-1" ).slider({
@@ -1081,6 +1109,38 @@
           $( "#amount-2" ).val( $( "#slider-range-2" ).slider( "values", 0 ) + "" );
           $( "#amount2-2" ).val(  $( "#slider-range-2" ).slider( "values", 1 ) + "" );
         });
+        
+
+        // Работа с виджетом recaptcha
+        // 1. Получить ответ гугл капчи
+        var captcha = grecaptcha.getResponse();
+
+        // 2. Если ответ пустой, то выводим сообщение о том, что пользователь не прошёл тест.
+        // Такую форму не будем отправлять на сервер.
+        if (!captcha.length) {
+        // Выводим сообщение об ошибке
+        $('#recaptchaError').text('* Вы не прошли проверку "Я не робот"');
+        } else {
+        // получаем элемент, содержащий капчу
+        $('#recaptchaError').text('');
+        }
+
+        // 3. Если форма валидна и длина капчи не равно пустой строке, то отправляем форму на сервер (AJAX)
+        // if ((formValid) && (captcha.length)) {
+        // ...
+        // добавить в formData значение 'g-recaptcha-response'=значение_recaptcha
+        // formData.append('g-recaptcha-response', captcha);
+        // ...
+        // }
+
+        // 4. Если сервер вернул ответ error, то делаем следующее...
+        // Сбрасываем виджет reCaptcha
+        grecaptcha.reset();
+        // Если существует свойство msg у объекта $data, то...
+        if ($data.msg) {
+        // вывести её в элемент у которого id=recaptchaError
+        $('#recaptchaError').text($data.msg);
+        }
     </script>
 </body>
 </html>

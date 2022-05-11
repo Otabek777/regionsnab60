@@ -501,6 +501,20 @@
             </div>
         </header>
     </div>
+    <div class="modal_delete_product">
+        <div class="modal__block">
+            <button class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="16" fill="#F4F6FB"/>
+                    <path d="M20.7134 10.3432L10.3425 20.7141C10.0821 20.9745 10.0821 21.3966 10.3425 21.657C10.6028 21.9173 11.025 21.9173 11.2853 21.6569L21.6562 11.2861C21.9166 11.0257 21.9166 10.6036 21.6562 10.3432C21.3959 10.0829 20.9737 10.0829 20.7134 10.3432Z" fill="#BDBDC8"/>
+                    <path d="M21.6587 20.7139L11.2878 10.343C11.0275 10.0826 10.6054 10.0826 10.345 10.343C10.0847 10.6033 10.0847 11.0254 10.345 11.2858L20.7159 21.6567C20.9762 21.917 21.3984 21.917 21.6587 21.6567C21.9191 21.3963 21.9191 20.9742 21.6587 20.7139Z" fill="#BDBDC8"/>
+                </svg>
+            </button>
+            <h3>Удаление товара</h3>
+            <h5>Вы точно хотите удалить выбранный товар?</h5>
+            <button class="btn">Удалить</button>
+        </div>
+    </div>
     <div class="modal_filter">
         <div class="modal_filter_block">
             <button class="modal__close">
@@ -618,6 +632,40 @@
             </div>
         </div>
     </div>
+    <div class="modal_question">
+        <div class="modal__block">
+            <button class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="16" fill="#F4F6FB"/>
+                    <path d="M20.7134 10.3432L10.3425 20.7141C10.0821 20.9745 10.0821 21.3966 10.3425 21.657C10.6028 21.9173 11.025 21.9173 11.2853 21.6569L21.6562 11.2861C21.9166 11.0257 21.9166 10.6036 21.6562 10.3432C21.3959 10.0829 20.9737 10.0829 20.7134 10.3432Z" fill="#BDBDC8"/>
+                    <path d="M21.6587 20.7139L11.2878 10.343C11.0275 10.0826 10.6054 10.0826 10.345 10.343C10.0847 10.6033 10.0847 11.0254 10.345 11.2858L20.7159 21.6567C20.9762 21.917 21.3984 21.917 21.6587 21.6567C21.9191 21.3963 21.9191 20.9742 21.6587 20.7139Z" fill="#BDBDC8"/>
+                </svg>
+            </button>
+            <h3>Форма заказа услуги:</h3>
+            <h5>Изготовление доборных элементов под ваши размеры</h5>
+            <div class="form">
+                <div class="block">
+                    <p>Имя</p>
+                    <input type="text" class="input" placeholder="Как к вам обращаться">
+                </div>
+                <div class="block">
+                    <p>Телефон</p>
+                    <input type="text" class="input" placeholder="+7(___)___-__-__">
+                </div>
+                <div class="block">
+                    <p>Вопрос</p>
+                    <textarea name="" placeholder="Ваш вопрос или комментарий"></textarea>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="12">
+                    <label for="12">Я согласен на <a href="#">обработку персональных данных</a></label>
+                </div>
+                <div style="margin-bottom: 24px;" class="g-recaptcha" data-sitekey="6KepjAsTFFFFFFMqccY0ZiGqc3TEd3YVxo8cHsGX"></div>
+                <div class="text-danger" id="recaptchaError"></div>
+                <button class="btn">Отправить</button>
+            </div>
+        </div>
+    </div>
     <div class="modal">
         <div class="modal__block">
             <button class="modal__close">
@@ -667,7 +715,7 @@
                 <a class="btn2" href="#">Выбрать другую услугу</a>
             </form>
         </div>
-    </div>  
+    </div>
     <div class="navbar__bottom__menu">
         <button class="header__select mobile">
             <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -843,75 +891,125 @@
         </button>
     </div>
     <main class="main">
-        <section class="roof">
-            <div class="crumbs">
-                <div class="container">
-                    <div class="crumbs__box">
-                        <a href="#">Главная</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="6" viewBox="0 0 4 6" fill="none">
-                            <path d="M0.322266 0.42678L0.675819 0.0732269L3.6026 3L0.675819 5.92678L0.322266 5.57323L2.89529 3L0.322266 0.42678Z" fill="#999FAA"/>
-                        </svg>
-                        <a href="#">Каталог</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="6" viewBox="0 0 4 6" fill="none">
-                            <path d="M0.322266 0.42678L0.675819 0.0732269L3.6026 3L0.675819 5.92678L0.322266 5.57323L2.89529 3L0.322266 0.42678Z" fill="#999FAA"/>
-                        </svg>
-                        <p>Кровля</p>
-                    </div>
-                </div>
-            </div>
+        <section class="basket">
             <div class="container">
                 <div class="section__title">
-                    <h2 class="h2">Кровля</h2>
+                    <h2 class="h2">Корзина
+                        <span class="quantity">14</span>
+                    </h2>
                 </div>
-                <div class="roof__box">
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r1.png" alt="">
+                <div class="basket__box">
+                    <div class="basket__content">
+                        <div class="basket__cards">
+                            <div class="basket__card">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="title">Профнастил Оптима оцинкованный C-8х1150</h5>
+                                    <div>
+                                        <button class="delete">удалить</button>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <div class="num">
+                                        <button class="minus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="2" viewBox="0 0 16 2" fill="none">
+                                                <path d="M0.959961 1.95938H15.0399C15.5702 1.95938 16 1.52958 16 0.999158C16 0.468866 15.5703 0.0390625 15.0399 0.0390625H0.959961C0.429802 0.0391939 0 0.468997 0 0.999289C0 1.52958 0.429802 1.95938 0.959961 1.95938Z" fill="#1E1F3A"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="input" value="10" readonly>
+                                        <button class="plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M15.375 7.375H8.625V0.625C8.625 0.279813 8.34519 0 8 0C7.65481 0 7.375 0.279813 7.375 0.625V7.375H0.625C0.279813 7.375 0 7.65481 0 8C0 8.34519 0.279813 8.625 0.625 8.625H7.375V15.375C7.375 15.7202 7.65481 16 8 16C8.34519 16 8.625 15.7202 8.625 15.375V8.625H15.375C15.7202 8.625 16 8.34519 16 8C16 7.65481 15.7202 7.375 15.375 7.375Z" fill="#1E1F3A"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="one_price">цена за штуку 400 ₽</p>
+                                </div>
+                                <div class="price">
+                                    <p>4 000 ₽</p>
+                                </div>
+                            </div>
+                            <div class="basket__card">
+                                <div class="img">
+                                    <img src="img/3.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="title">Черепица Ондувилла 3D | Коричневый</h5>
+                                    <div>
+                                        <button class="delete">удалить</button>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <div class="num">
+                                        <button class="minus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="2" viewBox="0 0 16 2" fill="none">
+                                                <path d="M0.959961 1.95938H15.0399C15.5702 1.95938 16 1.52958 16 0.999158C16 0.468866 15.5703 0.0390625 15.0399 0.0390625H0.959961C0.429802 0.0391939 0 0.468997 0 0.999289C0 1.52958 0.429802 1.95938 0.959961 1.95938Z" fill="#1E1F3A"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="input" value="3" readonly>
+                                        <button class="plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M15.375 7.375H8.625V0.625C8.625 0.279813 8.34519 0 8 0C7.65481 0 7.375 0.279813 7.375 0.625V7.375H0.625C0.279813 7.375 0 7.65481 0 8C0 8.34519 0.279813 8.625 0.625 8.625H7.375V15.375C7.375 15.7202 7.65481 16 8 16C8.34519 16 8.625 15.7202 8.625 15.375V8.625H15.375C15.7202 8.625 16 8.34519 16 8C16 7.65481 15.7202 7.375 15.375 7.375Z" fill="#1E1F3A"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="one_price">цена за штуку 265 ₽</p>
+                                </div>
+                                <div class="price">
+                                    <p>800 ₽</p>
+                                </div>
+                            </div>
+                            <div class="basket__card">
+                                <div class="img">
+                                    <img src="img/2.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="title">Сайдинг Standart Classic Color FineBer белый 245x150</h5>
+                                    <div>
+                                        <button class="delete">удалить</button>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <div class="num">
+                                        <button class="minus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="2" viewBox="0 0 16 2" fill="none">
+                                                <path d="M0.959961 1.95938H15.0399C15.5702 1.95938 16 1.52958 16 0.999158C16 0.468866 15.5703 0.0390625 15.0399 0.0390625H0.959961C0.429802 0.0391939 0 0.468997 0 0.999289C0 1.52958 0.429802 1.95938 0.959961 1.95938Z" fill="#1E1F3A"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="input" value="1" readonly>
+                                        <button class="plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M15.375 7.375H8.625V0.625C8.625 0.279813 8.34519 0 8 0C7.65481 0 7.375 0.279813 7.375 0.625V7.375H0.625C0.279813 7.375 0 7.65481 0 8C0 8.34519 0.279813 8.625 0.625 8.625H7.375V15.375C7.375 15.7202 7.65481 16 8 16C8.34519 16 8.625 15.7202 8.625 15.375V8.625H15.375C15.7202 8.625 16 8.34519 16 8C16 7.65481 15.7202 7.375 15.375 7.375Z" fill="#1E1F3A"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="one_price">цена за штуку 265 ₽</p>
+                                </div>
+                                <div class="price">
+                                    <p>235 ₽</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="title">Металлочерепица</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r2.png" alt="">
+                    </div>
+                    <div class="basket__aside">
+                        <div class="wrap">
+                            <div class="top">
+                                <h5>Итого</h5>
+                                <h5 class="price">5 465 ₽</h5>
+                            </div>
+                            <button class="btn">Оформить заказ</button>
                         </div>
-                        <p class="title">Профилированные листы</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r3.png" alt="">
-                        </div>
-                        <p class="title">Доборные элементы для кровли</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r4.png" alt="">
-                        </div>
-                        <p class="title">Вентиляционные выходы</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r5.png" alt="">
-                        </div>
-                        <p class="title">Крепеж для кровли</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r2.png" alt="">
-                        </div>
-                        <p class="title">Профилированные листы</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r7.png" alt="">
-                        </div>
-                        <p class="title">Софит металлический</p>
-                    </a>
-                    <a href="#" class="roof__item">
-                        <div class="img">
-                            <img src="img/r8.png" alt="">
-                        </div>
-                        <p class="title">Элементы безопасности кровли</p>
-                    </a>
+                    </div>
+                </div>
+                <div class="basket__wrap">
+                    <h3 class="h3">Оплата</h3>
+                    <p class="text">Не зависимо от материалов кровли и фасада, монтаж не обойдется без доборных элементов. В этом разделе представлены изделия из металла. Мы изготавливаем их из оцинкованного металла толщиной 0,45мм. с полимерным покрытием. В наличии всегда металл основных расцветок RAL. Металл покрыт защитной пленкой. Работаем по размерам заказчика. Максимальная длина изделий 3м.</p>
+                </div>
+                <div class="basket__wrap">
+                    <h3 class="h3">Доставка</h3>
+                    <p class="text">Не зависимо от материалов кровли и фасада, монтаж не обойдется без доборных элементов. В этом разделе представлены изделия из металла. Мы изготавливаем их из оцинкованного металла толщиной 0,45мм. с полимерным покрытием. В наличии всегда металл основных расцветок RAL. Металл покрыт защитной пленкой. Работаем по размерам заказчика. Максимальная длина изделий 3м.</p>
                 </div>
             </div>
         </section>
@@ -1052,6 +1150,7 @@
     <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script>
         $( function() {
           $( "#slider-range-1" ).slider({
@@ -1081,6 +1180,38 @@
           $( "#amount-2" ).val( $( "#slider-range-2" ).slider( "values", 0 ) + "" );
           $( "#amount2-2" ).val(  $( "#slider-range-2" ).slider( "values", 1 ) + "" );
         });
+        
+
+        // Работа с виджетом recaptcha
+        // 1. Получить ответ гугл капчи
+        var captcha = grecaptcha.getResponse();
+
+        // 2. Если ответ пустой, то выводим сообщение о том, что пользователь не прошёл тест.
+        // Такую форму не будем отправлять на сервер.
+        if (!captcha.length) {
+        // Выводим сообщение об ошибке
+        $('#recaptchaError').text('* Вы не прошли проверку "Я не робот"');
+        } else {
+        // получаем элемент, содержащий капчу
+        $('#recaptchaError').text('');
+        }
+
+        // 3. Если форма валидна и длина капчи не равно пустой строке, то отправляем форму на сервер (AJAX)
+        // if ((formValid) && (captcha.length)) {
+        // ...
+        // добавить в formData значение 'g-recaptcha-response'=значение_recaptcha
+        // formData.append('g-recaptcha-response', captcha);
+        // ...
+        // }
+
+        // 4. Если сервер вернул ответ error, то делаем следующее...
+        // Сбрасываем виджет reCaptcha
+        grecaptcha.reset();
+        // Если существует свойство msg у объекта $data, то...
+        if ($data.msg) {
+        // вывести её в элемент у которого id=recaptchaError
+        $('#recaptchaError').text($data.msg);
+        }
     </script>
 </body>
 </html>
